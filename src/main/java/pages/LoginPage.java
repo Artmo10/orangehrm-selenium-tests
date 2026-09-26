@@ -11,26 +11,29 @@ import java.time.Duration;
 public class LoginPage {
     private WebDriver webDriver;
     private WebDriverWait wait;
+
+    // ── Locators ──
     private By userInput = By.name("username");
     private By passWordInput = By.name("password");
     private By loginButton = By.cssSelector("button[type='submit']");
 
     public LoginPage(WebDriver webDriver){
         this.webDriver = webDriver;
-        this.wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
     }
 
-    public void typeUserName(String user){
+    // ── Acciones ──
+    private void typeUserName(String user){
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(userInput));
         element.sendKeys(user);
     }
 
-    public void typePassWord(String passWord){
+    private void typePassWord(String passWord){
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(passWordInput));
         element.sendKeys(passWord);
     }
 
-    public DashboardPage clickOnLoginButton(){
+    private DashboardPage clickOnLoginButton(){
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(loginButton));
         element.click();
         return new DashboardPage(webDriver);
