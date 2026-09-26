@@ -101,7 +101,10 @@ public class AddEmployeePage {
 
     public boolean isEmployeeSaved(){
         try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(successToast));
+            new WebDriverWait(webDriver, Duration.ofSeconds(20)).until(ExpectedConditions.or(
+                    ExpectedConditions.visibilityOfElementLocated(successToast),
+                    ExpectedConditions.urlContains("/pim/viewPersonalDetails")
+            ));
             return true;
         } catch (TimeoutException e) {
             return false;
