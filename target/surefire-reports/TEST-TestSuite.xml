@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="102.321" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/bfadmin/dev-projects/orangehrm-selenium-tests/target/test-classes:/home/bfadmin/dev-projects/orangehrm-selenium-tests/target/classes:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.48.0/selenium-chrome-driver-4.48.0.jar:/home/bfadmin/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/bfadmin/.m2/repository/org/jspecify/jspecify/1.0.1/jspecify-1.0.1.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-api/4.48.0/selenium-api-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.48.0/selenium-chromium-driver-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-json/4.48.0/selenium-json-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.48.0/selenium-manager-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-os/4.48.0/selenium-os-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.48.0/selenium-remote-driver-4.48.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-api/1.65.0/opentelemetry-api-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-context/1.65.0/opentelemetry-context-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-common/1.65.0/opentelemetry-common-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.65.0/opentelemetry-exporter-logging-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.65.0/opentelemetry-sdk-common-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.65.0/opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.65.0/opentelemetry-sdk-extension-autoconfigure-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.65.0/opentelemetry-sdk-trace-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.65.0/opentelemetry-sdk-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.65.0/opentelemetry-sdk-metrics-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.65.0/opentelemetry-sdk-logs-1.65.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.48.0/selenium-firefox-driver-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-http/4.48.0/selenium-http-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-support/4.48.0/selenium-support-4.48.0.jar:/home/bfadmin/.m2/repository/com/google/guava/guava/33.6.0-jre/guava-33.6.0-jre.jar:/home/bfadmin/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/home/bfadmin/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/bfadmin/.m2/repository/com/google/errorprone/error_prone_annotations/2.47.0/error_prone_annotations-2.47.0.jar:/home/bfadmin/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar:/home/bfadmin/.m2/repository/net/bytebuddy/byte-buddy/1.18.11/byte-buddy-1.18.11.jar:/home/bfadmin/.m2/repository/org/testng/testng/7.12.0/testng-7.12.0.jar:/home/bfadmin/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/home/bfadmin/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/home/bfadmin/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/bfadmin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/home/bfadmin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/home/bfadmin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/home/bfadmin/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar:/home/bfadmin/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/home/bfadmin/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/bfadmin/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/home/bfadmin/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/home/bfadmin/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value="America/La_Paz"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-25-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/bfadmin/dev-projects/orangehrm-selenium-tests/target/surefire/surefirebooter-20260929162606074_3.jar /home/bfadmin/dev-projects/orangehrm-selenium-tests/target/surefire 2026-09-29T16-26-05_993-jvmRun1 surefire-20260929162606074_1tmp surefire_0-20260929162606074_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/bfadmin/dev-projects/orangehrm-selenium-tests/target/test-classes:/home/bfadmin/dev-projects/orangehrm-selenium-tests/target/classes:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.48.0/selenium-chrome-driver-4.48.0.jar:/home/bfadmin/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/bfadmin/.m2/repository/org/jspecify/jspecify/1.0.1/jspecify-1.0.1.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-api/4.48.0/selenium-api-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.48.0/selenium-chromium-driver-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-json/4.48.0/selenium-json-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.48.0/selenium-manager-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-os/4.48.0/selenium-os-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.48.0/selenium-remote-driver-4.48.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-api/1.65.0/opentelemetry-api-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-context/1.65.0/opentelemetry-context-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-common/1.65.0/opentelemetry-common-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.65.0/opentelemetry-exporter-logging-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.65.0/opentelemetry-sdk-common-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.65.0/opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.65.0/opentelemetry-sdk-extension-autoconfigure-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.65.0/opentelemetry-sdk-trace-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.65.0/opentelemetry-sdk-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.65.0/opentelemetry-sdk-metrics-1.65.0.jar:/home/bfadmin/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.65.0/opentelemetry-sdk-logs-1.65.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.48.0/selenium-firefox-driver-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-http/4.48.0/selenium-http-4.48.0.jar:/home/bfadmin/.m2/repository/org/seleniumhq/selenium/selenium-support/4.48.0/selenium-support-4.48.0.jar:/home/bfadmin/.m2/repository/com/google/guava/guava/33.6.0-jre/guava-33.6.0-jre.jar:/home/bfadmin/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/home/bfadmin/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/bfadmin/.m2/repository/com/google/errorprone/error_prone_annotations/2.47.0/error_prone_annotations-2.47.0.jar:/home/bfadmin/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar:/home/bfadmin/.m2/repository/net/bytebuddy/byte-buddy/1.18.11/byte-buddy-1.18.11.jar:/home/bfadmin/.m2/repository/org/testng/testng/7.12.0/testng-7.12.0.jar:/home/bfadmin/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/home/bfadmin/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/home/bfadmin/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/bfadmin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/home/bfadmin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/home/bfadmin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/home/bfadmin/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar:/home/bfadmin/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/home/bfadmin/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/bfadmin/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/home/bfadmin/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/home/bfadmin/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/bfadmin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="/usr/lib/jvm/java-25-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/bfadmin/dev-projects/orangehrm-selenium-tests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/bfadmin/dev-projects/orangehrm-selenium-tests/target/surefire/surefirebooter-20260929162606074_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.4.1+1-1-24.04.4-Ubuntu"/>
+    <property name="user.name" value="bfadmin"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.6.87.2-microsoft-standard-WSL2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/bfadmin/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-25"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="25.0.4.1"/>
+    <property name="user.dir" value="/home/bfadmin/dev-projects/orangehrm-selenium-tests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="25.0.4.1+1-1-24.04.4-Ubuntu"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testSuccessfulLogin" classname="login.LoginTests" time="2.511">
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Sep 29, 2026 4:26:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+]]></system-err>
+  </testcase>
+  <testcase name="testSuccessfulLogin" classname="login.LoginTests" time="2.951"/>
+  <testcase name="testCreateAndSearchEmployee[utils.Employee@466d49f0](1)" classname="pim.EmployeeLifecycleTests" time="13.237">
+    <system-err><![CDATA[Sep 29, 2026 4:26:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+]]></system-err>
+  </testcase>
+  <testcase name="testCreateAndSearchEmployee[utils.Employee@1c758545](2)" classname="pim.EmployeeLifecycleTests" time="13.771">
+    <system-err><![CDATA[Sep 29, 2026 4:26:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+]]></system-err>
+  </testcase>
+  <testcase name="testCreateAndSearchEmployee[utils.Employee@22c75c01](1)" classname="pim.EmployeeLifecycleTests" time="15.151"/>
+  <testcase name="testCreateAndSearchEmployee[utils.Employee@606a1bc4](2)" classname="pim.EmployeeLifecycleTests" time="15.781"/>
+</testsuite>
