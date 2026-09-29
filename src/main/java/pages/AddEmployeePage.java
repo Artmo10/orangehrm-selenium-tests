@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -61,9 +62,12 @@ public class AddEmployeePage {
         element.sendKeys(lastName);
     }
 
-    public String getGeneratedEmployeeId(){
+    public void typeEmployeeId(String employeeId){
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(employeeIdInput));
-        return element.getAttribute("value");
+        // La app autocompleta el Id de forma asíncrona: se espera ese valor para que no pise el nuestro
+        wait.until(driver -> !element.getDomProperty("value").isEmpty());
+        element.sendKeys(Keys.chord(Keys.CONTROL, "a"), Keys.DELETE);
+        element.sendKeys(employeeId);
     }
 
     public void enableCreateLoginDetails(){

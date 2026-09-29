@@ -6,7 +6,9 @@ Sitio bajo prueba: https://opensource-demo.orangehrmlive.com/
 
 ---
 
-## Caso de negocio automatizado
+## Casos automatizados
+
+### Flujo completo (caso de negocio)
 
 En una sola prueba (`EmployeeLifecycleTests.testCreateAndSearchEmployee`):
 
@@ -14,14 +16,18 @@ En una sola prueba (`EmployeeLifecycleTests.testCreateAndSearchEmployee`):
 2. Ir al módulo **PIM** desde el menú lateral.
 3. Crear un empleado nuevo con:
    - Nombre, segundo nombre y apellido.
-   - Employee Id (se captura el valor que genera la aplicación).
+   - Employee Id único, generado al momento de ejecutar (reemplaza el que propone la aplicación).
    - Datos de usuario (activando el switch *Create Login Details*): usuario, contraseña y estado.
 4. Buscar el empleado en **Employee List** por su Employee Id.
 5. Verificar que aparece en la grilla de resultados, validando que:
-   - El **Id** de la fila coincide exactamente con el generado.
+   - El **Id** de la fila coincide exactamente con el cargado.
    - El **nombre** de la fila corresponde al nombre único creado en la corrida.
 
 Fuera de alcance: pestaña Personal Details, contactos, cargo, salario, dependientes y foto.
+
+### Login independiente
+
+`LoginTests.testSuccessfulLogin` valida por separado que el inicio de sesión lleva al **Dashboard** (sugerencia del docente). Si el login se rompe, este test lo señala directamente, sin tener que deducirlo del fallo del flujo completo. Se ejecuta en los dos navegadores, igual que el flujo completo.
 
 ---
 
@@ -57,15 +63,17 @@ orangeHRM/
 │   └── test/
 │       ├── java/
 │       │   ├── base/BaseTest.java              # Setup/teardown del driver (Chrome/Firefox)
+│       │   ├── login/LoginTests.java           # Test de login independiente
 │       │   ├── pim/EmployeeLifecycleTests.java # La prueba del caso de negocio
 │       │   └── utils/
 │       │       ├── Employee.java               # Modelo de datos del empleado
 │       │       ├── EmployeeDataProvider.java   # Lee el JSON y expone el @DataProvider
-│       │       └── UniqueNameGenerator.java    # Genera el sufijo único por corrida
+│       │       ├── UniqueNameGenerator.java    # Genera el sufijo único por corrida
+│       │       └── UniqueIdGenerator.java      # Genera el Employee Id único
 │       └── resources/testdata/
 │           └── employees.json                  # Datos de los 2 empleados
 │
-├── testng.xml   # Suite: ejecuta el caso en Chrome y en Firefox
+├── testng.xml   # Suite: ejecuta login y flujo completo en Chrome y en Firefox
 └── pom.xml
 ```
 
@@ -88,14 +96,18 @@ orangeHRM/
 - **En ejecución** se agrega un sufijo con timestamp (`_<epochSeconds>`) al **nombre** y al **usuario**.
   - Ejemplo: `Carlos` → `Carlos_1758790421`.
   - El sufijo en el usuario evita el error de "usuario ya existente", ya que la demo es compartida y la suite crea 4 empleados por corrida.
+- El **Employee Id** se genera completo en ejecución: los últimos 10 dígitos del timestamp en milisegundos (10 es el máximo que acepta el campo). Se carga en el formulario en lugar de usar el Id que propone la aplicación por dos motivos:
+  - La consigna incluye el Employee Id entre los datos que se **cargan** en el formulario de alta.
+  - En la demo compartida, el Id que propone la aplicación puede chocar con el de otro usuario que esté creando empleados al mismo tiempo.
 
 ### Búsqueda y verificación
-- La búsqueda se hace por **Employee Id**, capturado del formulario antes de guardar. Es un identificador inequívoco y evita la ambigüedad del autocompletado del campo *Employee Name*.
-- La verificación lee la grilla por columnas: busca la fila cuyo **Id es exactamente igual** al generado y valida que su nombre **empiece con el nombre único** de la corrida.
+- La búsqueda se hace por **Employee Id**, el mismo que se cargó en el formulario. Es un identificador inequívoco y evita la ambigüedad del autocompletado del campo *Employee Name*.
+- La verificación lee la grilla por columnas: busca la fila cuyo **Id es exactamente igual** al cargado y valida que su nombre **empiece con el nombre único** de la corrida.
 
 ### Estabilidad
 - Esperas explícitas (`WebDriverWait`) en todas las interacciones; no se usa `Thread.sleep`.
 - Se espera a que desaparezca el loader del formulario (`.oxd-form-loader`) antes de interactuar.
+- Antes de escribir el Employee Id se espera a que la aplicación termine de autocompletar el suyo, para que no pise el valor cargado.
 - El switch *Create Login Details* y los radio de estado se clickean sobre su elemento visual (`span`), porque el `input` nativo está oculto.
 - Después de *Search* se espera a que la grilla anterior se recargue (`stalenessOf`) antes de leer los resultados.
 - Se verifica el mensaje *Successfully Saved* antes de continuar con la búsqueda.
@@ -105,24 +117,28 @@ orangeHRM/
 
 ## Cómo ejecutar
 
-### Opción 1 – Suite completa desde IntelliJ (recomendado para la entrega)
-Click derecho sobre `testng.xml` → **Run 'testng.xml'**.
-
-Resultado esperado: **4 ejecuciones** (2 empleados × 2 navegadores: Chrome y Firefox).
-
-### Opción 2 – Suite completa desde la terminal (sin IDE)
+### Opción 1 – Suite completa desde la terminal (recomendado, sin IDE)
 En la raíz del proyecto:
 
 ```bash
 mvn clean test
 ```
 
-El `pom.xml` configura `maven-surefire-plugin` para usar `testng.xml` como suite, así que Maven ejecuta el mismo caso en Chrome y en Firefox: 4 ejecuciones.
+El `pom.xml` configura `maven-surefire-plugin` para usar `testng.xml` como suite, así que Maven ejecuta el login y el flujo completo en Chrome y en Firefox.
 
-### Opción 3 – Solo la clase de prueba (desarrollo / depuración)
-Click derecho sobre `EmployeeLifecycleTests.java` → **Run**.
+Resultado esperado: **6 ejecuciones** en total:
+- Chrome: 1 login + 2 flujos completos (uno por empleado).
+- Firefox: 1 login + 2 flujos completos (uno por empleado).
 
-Esta forma **no usa** `testng.xml`: el navegador toma el valor por defecto (`chrome`), por lo que se ven **2 ejecuciones, ambas en Chrome**. Sirve para depurar rápido, pero no cubre el requisito de dos navegadores.
+Los reportes quedan en `target/surefire-reports/` (`index.html` y `emailable-report.html`).
+
+### Opción 2 – Suite completa desde IntelliJ
+Click derecho sobre `testng.xml` → **Run 'testng.xml'**. Ejecuta lo mismo que la opción 1.
+
+### Opción 3 – Una sola clase de prueba (desarrollo / depuración)
+Click derecho sobre `EmployeeLifecycleTests.java` o `LoginTests.java` → **Run**.
+
+Esta forma **no usa** `testng.xml`: el navegador toma el valor por defecto (`chrome`). Sirve para depurar rápido, pero no cubre el requisito de dos navegadores.
 
 ---
 

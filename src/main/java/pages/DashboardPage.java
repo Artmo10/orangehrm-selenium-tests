@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -28,5 +29,10 @@ public class DashboardPage {
         } catch (TimeoutException e){
             return false;
         }
+    }
+
+    public String getDashboardHeaderText(){
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardHeader));
+        return element.getText();
     }
 }

@@ -10,6 +10,7 @@ import pages.LoginPage;
 import pages.SidebarMenu;
 import utils.Employee;
 import utils.EmployeeDataProvider;
+import utils.UniqueIdGenerator;
 import utils.UniqueNameGenerator;
 
 public class EmployeeLifecycleTests extends BaseTest {
@@ -32,13 +33,13 @@ public class EmployeeLifecycleTests extends BaseTest {
         // 4. Generar valores únicos para esta corrida
         String uniqueFirstName = UniqueNameGenerator.appendUniqueSuffix(employee.getFirstName());
         String uniqueUsername = UniqueNameGenerator.appendUniqueSuffix(employee.getUsername());
+        String uniqueEmployeeId = UniqueIdGenerator.generateEmployeeId();
 
         // 5. Llenar datos del empleado
         addEmployeePage.typeFirstName(uniqueFirstName);
         addEmployeePage.typeMiddleName(employee.getMiddleName());
         addEmployeePage.typeLastName(employee.getLastName());
-        String generatedEmployeeId = addEmployeePage.getGeneratedEmployeeId();
-        Assert.assertFalse(generatedEmployeeId.isEmpty(), "No se pudo capturar el Employee Id generado");
+        addEmployeePage.typeEmployeeId(uniqueEmployeeId);
 
         // 6. Activar y llenar datos de usuario
         addEmployeePage.enableCreateLoginDetails();
@@ -56,19 +57,19 @@ public class EmployeeLifecycleTests extends BaseTest {
 
         // 8. Volver al listado y buscar por Employee ID
         employeeListPage = addEmployeePage.goToEmployeeListTab();
-        employeeListPage.typeEmployeeId(generatedEmployeeId);
+        employeeListPage.typeEmployeeId(uniqueEmployeeId);
         employeeListPage.clickSearch();
 
         // 9. Verificar que el empleado aparece en la grilla con su ID y su nombre
-        String nameInGrid = employeeListPage.getNameForEmployeeId(generatedEmployeeId);
+        String nameInGrid = employeeListPage.getNameForEmployeeId(uniqueEmployeeId);
 
         Assert.assertNotNull(
                 nameInGrid,
-                "No apareció ninguna fila con el Employee Id '" + generatedEmployeeId + "'"
+                "No apareció ninguna fila con el Employee Id '" + uniqueEmployeeId + "'"
         );
         Assert.assertTrue(
                 nameInGrid.startsWith(uniqueFirstName),
-                "La fila con ID '" + generatedEmployeeId + "' muestra el nombre '" + nameInGrid
+                "La fila con ID '" + uniqueEmployeeId + "' muestra el nombre '" + nameInGrid
                         + "', se esperaba que empiece con '" + uniqueFirstName + "'"
         );
     }
