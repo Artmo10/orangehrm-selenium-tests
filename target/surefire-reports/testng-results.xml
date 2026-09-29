@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-29T16:26:06 GMT-04:00" name="OrangeHRM_PIM_Suite" finished-at="2026-09-29T16:27:48 GMT-04:00" duration-ms="101518">
+    <groups>
+    </groups>
+    <test started-at="2026-09-29T16:26:06 GMT-04:00" name="Chrome" finished-at="2026-09-29T16:26:52 GMT-04:00" duration-ms="45930">
+      <class name="pim.EmployeeLifecycleTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:16 GMT-04:00" name="setUp" finished-at="2026-09-29T16:26:21 GMT-04:00" duration-ms="4829" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void pim.EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:21 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-09-29T16:26:34 GMT-04:00" duration-ms="13237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[utils.Employee@466d49f0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAndSearchEmployee -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:34 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:26:34 GMT-04:00" duration-ms="104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:34 GMT-04:00" name="setUp" finished-at="2026-09-29T16:26:38 GMT-04:00" duration-ms="4561" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void pim.EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:38 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-09-29T16:26:52 GMT-04:00" duration-ms="13771" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[utils.Employee@1c758545]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAndSearchEmployee -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:52 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:26:52 GMT-04:00" duration-ms="92" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pim.EmployeeLifecycleTests -->
+      <class name="login.LoginTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:login.LoginTests@1ffe63b9]" started-at="2026-09-29T16:26:06 GMT-04:00" name="setUp" finished-at="2026-09-29T16:26:13 GMT-04:00" duration-ms="6495" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void login.LoginTests.testSuccessfulLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:login.LoginTests@1ffe63b9]" started-at="2026-09-29T16:26:13 GMT-04:00" name="testSuccessfulLogin" finished-at="2026-09-29T16:26:15 GMT-04:00" duration-ms="2510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:login.LoginTests@1ffe63b9]" started-at="2026-09-29T16:26:15 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:26:15 GMT-04:00" duration-ms="96" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTests.testSuccessfulLogin()[pri:0, instance:login.LoginTests@1ffe63b9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- login.LoginTests -->
+    </test> <!-- Chrome -->
+    <test started-at="2026-09-29T16:26:52 GMT-04:00" name="Firefox" finished-at="2026-09-29T16:27:48 GMT-04:00" duration-ms="55567">
+      <class name="pim.EmployeeLifecycleTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:02 GMT-04:00" name="setUp" finished-at="2026-09-29T16:27:10 GMT-04:00" duration-ms="8633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void pim.EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:10 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-09-29T16:27:25 GMT-04:00" duration-ms="15150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[utils.Employee@22c75c01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAndSearchEmployee -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:25 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:27:26 GMT-04:00" duration-ms="141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:26 GMT-04:00" name="setUp" finished-at="2026-09-29T16:27:32 GMT-04:00" duration-ms="5998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void pim.EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:32 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-09-29T16:27:47 GMT-04:00" duration-ms="15782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[utils.Employee@606a1bc4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAndSearchEmployee -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:47 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:27:48 GMT-04:00" duration-ms="544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- pim.EmployeeLifecycleTests -->
+      <class name="login.LoginTests">
+        <test-method is-config="true" signature="initReport()[pri:0, instance:login.LoginTests@2473d930]" started-at="2026-09-29T16:26:06 GMT-04:00" name="initReport" finished-at="2026-09-29T16:26:06 GMT-04:00" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReport -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:login.LoginTests@2473d930]" started-at="2026-09-29T16:26:52 GMT-04:00" name="setUp" finished-at="2026-09-29T16:26:58 GMT-04:00" duration-ms="5815" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void login.LoginTests.testSuccessfulLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:login.LoginTests@2473d930]" started-at="2026-09-29T16:26:58 GMT-04:00" name="testSuccessfulLogin" finished-at="2026-09-29T16:27:01 GMT-04:00" duration-ms="2950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:login.LoginTests@2473d930]" started-at="2026-09-29T16:27:01 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:27:02 GMT-04:00" duration-ms="548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTests.testSuccessfulLogin()[pri:0, instance:login.LoginTests@2473d930] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:login.LoginTests@2473d930]" started-at="2026-09-29T16:27:48 GMT-04:00" name="flushReport" finished-at="2026-09-29T16:27:48 GMT-04:00" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- login.LoginTests -->
+    </test> <!-- Firefox -->
+  </suite> <!-- OrangeHRM_PIM_Suite -->
+</testng-results>

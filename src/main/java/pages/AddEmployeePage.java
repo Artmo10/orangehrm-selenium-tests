@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -66,7 +67,9 @@ public class AddEmployeePage {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(employeeIdInput));
         // La app autocompleta el Id de forma asíncrona: se espera ese valor para que no pise el nuestro
         wait.until(driver -> !element.getDomProperty("value").isEmpty());
-        element.sendKeys(Keys.chord(Keys.CONTROL, "a"), Keys.DELETE);
+        // En macOS "seleccionar todo" es Cmd+A; Ctrl+A solo mueve el cursor al inicio
+        Keys selectAllModifier = Platform.getCurrent().is(Platform.MAC) ? Keys.COMMAND : Keys.CONTROL;
+        element.sendKeys(Keys.chord(selectAllModifier, "a"), Keys.DELETE);
         element.sendKeys(employeeId);
     }
 

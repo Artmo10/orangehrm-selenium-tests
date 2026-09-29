@@ -1,0 +1,18 @@
+[
+  {
+    "firstName": "Carlos",
+    "middleName": "Andres",
+    "lastName": "Fernandez",
+    "username": "carlos.fernandez",
+    "password": "Password123!",
+    "status": "Enabled"
+  },
+  {
+    "firstName": "Lucia",
+    "middleName": "Maria",
+    "lastName": "Gutierrez",
+    "username": "lucia.gutierrez",
+    "password": "Password123!",
+    "status": "Enabled"
+  }
+]
