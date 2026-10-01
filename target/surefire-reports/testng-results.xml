@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-29T16:26:06 GMT-04:00" name="OrangeHRM_PIM_Suite" finished-at="2026-09-29T16:27:48 GMT-04:00" duration-ms="101518">
+  <suite started-at="2026-10-01T09:03:33 GMT-04:00" name="OrangeHRM_PIM_Suite" finished-at="2026-10-01T09:06:31 GMT-04:00" duration-ms="177259">
     <groups>
     </groups>
-    <test started-at="2026-09-29T16:26:06 GMT-04:00" name="Chrome" finished-at="2026-09-29T16:26:52 GMT-04:00" duration-ms="45930">
+    <test started-at="2026-10-01T09:03:33 GMT-04:00" name="Chrome" finished-at="2026-10-01T09:05:21 GMT-04:00" duration-ms="107811">
       <class name="pim.EmployeeLifecycleTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:16 GMT-04:00" name="setUp" finished-at="2026-09-29T16:26:21 GMT-04:00" duration-ms="4829" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@5dd6264]" started-at="2026-10-01T09:03:47 GMT-04:00" name="setUp" finished-at="2026-10-01T09:03:54 GMT-04:00" duration-ms="7244" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,29 +23,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:21 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-09-29T16:26:34 GMT-04:00" duration-ms="13237" status="PASS">
+        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@5dd6264]" started-at="2026-10-01T09:03:54 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-10-01T09:04:35 GMT-04:00" duration-ms="40232" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[utils.Employee@466d49f0]]>
+                <![CDATA[utils.Employee@245a060f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateAndSearchEmployee -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:34 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:26:34 GMT-04:00" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@5dd6264]" started-at="2026-10-01T09:04:35 GMT-04:00" name="tearDown" finished-at="2026-10-01T09:04:35 GMT-04:00" duration-ms="95" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1] output={null}]]]>
+                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@5dd6264] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:34 GMT-04:00" name="setUp" finished-at="2026-09-29T16:26:38 GMT-04:00" duration-ms="4561" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@5dd6264]" started-at="2026-10-01T09:04:35 GMT-04:00" name="setUp" finished-at="2026-10-01T09:04:43 GMT-04:00" duration-ms="8738" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,22 +61,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:38 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-09-29T16:26:52 GMT-04:00" duration-ms="13771" status="PASS">
+        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@5dd6264]" started-at="2026-10-01T09:04:43 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-10-01T09:05:11 GMT-04:00" duration-ms="27308" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[utils.Employee@1c758545]]>
+                <![CDATA[utils.Employee@587a1cfb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateAndSearchEmployee -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1]" started-at="2026-09-29T16:26:52 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:26:52 GMT-04:00" duration-ms="92" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@5dd6264]" started-at="2026-10-01T09:05:11 GMT-04:00" name="tearDown" finished-at="2026-10-01T09:05:21 GMT-04:00" duration-ms="10409" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@1677d1] output={null}]]]>
+                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@5dd6264] output={null}]]]>
               </value>
             </param>
           </params>
@@ -85,7 +85,7 @@
         </test-method> <!-- tearDown -->
       </class> <!-- pim.EmployeeLifecycleTests -->
       <class name="login.LoginTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:login.LoginTests@1ffe63b9]" started-at="2026-09-29T16:26:06 GMT-04:00" name="setUp" finished-at="2026-09-29T16:26:13 GMT-04:00" duration-ms="6495" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:login.LoginTests@71b1176b]" started-at="2026-10-01T09:03:33 GMT-04:00" name="setUp" finished-at="2026-10-01T09:03:42 GMT-04:00" duration-ms="8752" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,15 +101,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccessfulLogin()[pri:0, instance:login.LoginTests@1ffe63b9]" started-at="2026-09-29T16:26:13 GMT-04:00" name="testSuccessfulLogin" finished-at="2026-09-29T16:26:15 GMT-04:00" duration-ms="2510" status="PASS">
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:login.LoginTests@71b1176b]" started-at="2026-10-01T09:03:42 GMT-04:00" name="testSuccessfulLogin" finished-at="2026-10-01T09:03:47 GMT-04:00" duration-ms="4841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:login.LoginTests@1ffe63b9]" started-at="2026-09-29T16:26:15 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:26:15 GMT-04:00" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:login.LoginTests@71b1176b]" started-at="2026-10-01T09:03:47 GMT-04:00" name="tearDown" finished-at="2026-10-01T09:03:47 GMT-04:00" duration-ms="97" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTests.testSuccessfulLogin()[pri:0, instance:login.LoginTests@1ffe63b9] output={null}]]]>
+                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTests.testSuccessfulLogin()[pri:0, instance:login.LoginTests@71b1176b] output={null}]]]>
               </value>
             </param>
           </params>
@@ -118,9 +118,9 @@
         </test-method> <!-- tearDown -->
       </class> <!-- login.LoginTests -->
     </test> <!-- Chrome -->
-    <test started-at="2026-09-29T16:26:52 GMT-04:00" name="Firefox" finished-at="2026-09-29T16:27:48 GMT-04:00" duration-ms="55567">
+    <test started-at="2026-10-01T09:05:21 GMT-04:00" name="Firefox" finished-at="2026-10-01T09:06:31 GMT-04:00" duration-ms="69425">
       <class name="pim.EmployeeLifecycleTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:02 GMT-04:00" name="setUp" finished-at="2026-09-29T16:27:10 GMT-04:00" duration-ms="8633" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@22a637e7]" started-at="2026-10-01T09:05:35 GMT-04:00" name="setUp" finished-at="2026-10-01T09:05:43 GMT-04:00" duration-ms="7334" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,29 +136,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:10 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-09-29T16:27:25 GMT-04:00" duration-ms="15150" status="PASS">
+        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@22a637e7]" started-at="2026-10-01T09:05:43 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-10-01T09:06:04 GMT-04:00" duration-ms="21339" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[utils.Employee@22c75c01]]>
+                <![CDATA[utils.Employee@5d5a51b1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateAndSearchEmployee -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:25 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:27:26 GMT-04:00" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@22a637e7]" started-at="2026-10-01T09:06:04 GMT-04:00" name="tearDown" finished-at="2026-10-01T09:06:04 GMT-04:00" duration-ms="280" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03] output={null}]]]>
+                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@22a637e7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:26 GMT-04:00" name="setUp" finished-at="2026-09-29T16:27:32 GMT-04:00" duration-ms="5998" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:pim.EmployeeLifecycleTests@22a637e7]" started-at="2026-10-01T09:06:04 GMT-04:00" name="setUp" finished-at="2026-10-01T09:06:11 GMT-04:00" duration-ms="7105" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,22 +174,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:32 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-09-29T16:27:47 GMT-04:00" duration-ms="15782" status="PASS">
+        <test-method signature="testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@22a637e7]" started-at="2026-10-01T09:06:11 GMT-04:00" name="testCreateAndSearchEmployee" data-provider="employeeData" finished-at="2026-10-01T09:06:30 GMT-04:00" duration-ms="18950" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[utils.Employee@606a1bc4]]>
+                <![CDATA[utils.Employee@39e53bef]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateAndSearchEmployee -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03]" started-at="2026-09-29T16:27:47 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:27:48 GMT-04:00" duration-ms="544" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:pim.EmployeeLifecycleTests@22a637e7]" started-at="2026-10-01T09:06:30 GMT-04:00" name="tearDown" finished-at="2026-10-01T09:06:31 GMT-04:00" duration-ms="300" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@35047d03] output={null}]]]>
+                <![CDATA[[TestResult name=testCreateAndSearchEmployee status=SUCCESS method=EmployeeLifecycleTests.testCreateAndSearchEmployee(utils.Employee)[pri:0, instance:pim.EmployeeLifecycleTests@22a637e7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -198,11 +198,11 @@
         </test-method> <!-- tearDown -->
       </class> <!-- pim.EmployeeLifecycleTests -->
       <class name="login.LoginTests">
-        <test-method is-config="true" signature="initReport()[pri:0, instance:login.LoginTests@2473d930]" started-at="2026-09-29T16:26:06 GMT-04:00" name="initReport" finished-at="2026-09-29T16:26:06 GMT-04:00" duration-ms="199" status="PASS">
+        <test-method is-config="true" signature="initReport()[pri:0, instance:login.LoginTests@69b2283a]" started-at="2026-10-01T09:03:33 GMT-04:00" name="initReport" finished-at="2026-10-01T09:03:33 GMT-04:00" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initReport -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:login.LoginTests@2473d930]" started-at="2026-09-29T16:26:52 GMT-04:00" name="setUp" finished-at="2026-09-29T16:26:58 GMT-04:00" duration-ms="5815" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:login.LoginTests@69b2283a]" started-at="2026-10-01T09:05:21 GMT-04:00" name="setUp" finished-at="2026-10-01T09:05:29 GMT-04:00" duration-ms="7892" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,22 +218,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccessfulLogin()[pri:0, instance:login.LoginTests@2473d930]" started-at="2026-09-29T16:26:58 GMT-04:00" name="testSuccessfulLogin" finished-at="2026-09-29T16:27:01 GMT-04:00" duration-ms="2950" status="PASS">
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:login.LoginTests@69b2283a]" started-at="2026-10-01T09:05:29 GMT-04:00" name="testSuccessfulLogin" finished-at="2026-10-01T09:05:35 GMT-04:00" duration-ms="5922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:login.LoginTests@2473d930]" started-at="2026-09-29T16:27:01 GMT-04:00" name="tearDown" finished-at="2026-09-29T16:27:02 GMT-04:00" duration-ms="548" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:login.LoginTests@69b2283a]" started-at="2026-10-01T09:05:35 GMT-04:00" name="tearDown" finished-at="2026-10-01T09:05:35 GMT-04:00" duration-ms="299" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTests.testSuccessfulLogin()[pri:0, instance:login.LoginTests@2473d930] output={null}]]]>
+                <![CDATA[[TestResult name=testSuccessfulLogin status=SUCCESS method=LoginTests.testSuccessfulLogin()[pri:0, instance:login.LoginTests@69b2283a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:login.LoginTests@2473d930]" started-at="2026-09-29T16:27:48 GMT-04:00" name="flushReport" finished-at="2026-09-29T16:27:48 GMT-04:00" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:login.LoginTests@69b2283a]" started-at="2026-10-01T09:06:31 GMT-04:00" name="flushReport" finished-at="2026-10-01T09:06:31 GMT-04:00" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

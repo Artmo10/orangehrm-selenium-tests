@@ -1,8 +1,8 @@
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/test/java/pim/EmployeeLifecycleTests.java
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/test/java/utils/Employee.java
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/test/java/utils/UniqueNameGenerator.java
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/test/java/base/BaseTest.java
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/test/java/utils/EmployeeDataProvider.java
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/test/java/login/LoginTests.java
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/test/java/utils/ReportManager.java
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/test/java/utils/UniqueIdGenerator.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/test/java/base/BaseTest.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/test/java/login/LoginTests.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/test/java/pim/EmployeeLifecycleTests.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/test/java/utils/Employee.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/test/java/utils/EmployeeDataProvider.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/test/java/utils/ReportManager.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/test/java/utils/UniqueIdGenerator.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/test/java/utils/UniqueNameGenerator.java

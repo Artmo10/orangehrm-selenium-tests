@@ -1,5 +1,5 @@
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/main/java/pages/DashboardPage.java
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/main/java/pages/EmployeeListPage.java
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/main/java/pages/LoginPage.java
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/main/java/pages/AddEmployeePage.java
-/home/bfadmin/dev-projects/orangehrm-selenium-tests/src/main/java/pages/SidebarMenu.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/main/java/pages/AddEmployeePage.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/main/java/pages/DashboardPage.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/main/java/pages/EmployeeListPage.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/main/java/pages/LoginPage.java
+/Users/arturomorales/Projects/IntelliJ/orangeHRM/src/main/java/pages/SidebarMenu.java
