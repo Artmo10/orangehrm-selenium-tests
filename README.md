@@ -41,10 +41,11 @@ Fuera de alcance: pestaña Personal Details, contactos, cargo, salario, dependie
 | TestNG | 7.12.0 |
 | Jackson Databind | 2.17.2 |
 | Maven Surefire Plugin | 3.5.2 |
+| ExtentReports | 5.1.2 |
 
 Los drivers de los navegadores se resuelven automáticamente con **Selenium Manager** (incluido en Selenium 4), no hace falta descargarlos a mano.
 
-**Requisitos en la máquina:** JDK 25, Maven, Google Chrome y Mozilla Firefox instalados.
+**Requisitos en la máquina:** JDK 25 o superior, Maven, Google Chrome y Mozilla Firefox instalados.
 
 ---
 
@@ -130,7 +131,7 @@ Resultado esperado: **6 ejecuciones** en total:
 - Chrome: 1 login + 2 flujos completos (uno por empleado).
 - Firefox: 1 login + 2 flujos completos (uno por empleado).
 
-Los reportes quedan en `target/surefire-reports/` (`index.html` y `emailable-report.html`).
+Los reportes quedan en `target/reporte.html` (ExtentReports, con screenshot automático si un test falla) y en `target/surefire-reports/` (TestNG).
 
 ### Opción 2 – Suite completa desde IntelliJ
 Click derecho sobre `testng.xml` → **Run 'testng.xml'**. Ejecuta lo mismo que la opción 1.
